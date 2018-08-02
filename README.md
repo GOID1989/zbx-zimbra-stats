@@ -3,8 +3,8 @@ Zabbix Template and script for moniroting Zimbra statistics (traffic and stats)
 
 ## Template
 Uses two scripts to populate item:
- - zimbraTrafficStats.sh - UserParameter
- - zimbraGetStats.sh - cron and zabbix_sender
+ - zimbraTrafficStats.sh\zabbix_agent.txt - Zabbix UserParameter
+ - zimbraGetStats.sh\crontab.txt - cron and zabbix_sender
 
 ## Scripts
 Grabs info from this providers (Zimbra related tools):
