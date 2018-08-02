@@ -1,5 +1,7 @@
 # zbx-zimbra-stats
 Zabbix Template and script for moniroting Zimbra statistics (traffic and stats)
+https://github.com/GOID1989/zbx-zimbra-stats/blob/master/stats.png
+https://github.com/GOID1989/zbx-zimbra-stats/blob/master/traffic.png
 
 ## Template
 Uses two scripts to populate item:
