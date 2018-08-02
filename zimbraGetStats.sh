@@ -13,7 +13,7 @@ do
     # Check is the string contains value and valid
     if [ "$value" != "" ]
     then
-	echo "\"execology-zimbra\" $key $value" >> /tmp/zabbix_send.lst
+	echo "\"{YOUR_HOSTAME_ON_ZABBIX}\" $key $value" >> /tmp/zabbix_send.lst
     fi
 done </tmp/zimbraStats.xml
 
