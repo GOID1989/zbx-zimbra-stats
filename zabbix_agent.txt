@@ -1,0 +1,1 @@
+UserParameter=zimbra.traffic[*],sudo /etc/zabbix/scripts/zimbraTrafficStats.sh "$1"

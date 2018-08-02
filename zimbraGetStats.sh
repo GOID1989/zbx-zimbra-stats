@@ -8,12 +8,12 @@
 while read line
 do
     key=$(echo $line | awk -F "\"" '{print "zimbra."$2}')
-    value=$(echo $line | grep -o -P '(?<=>).*(?=</stat>)')
+    value=$(echo $line | grep -o -P '(?<=>).*(?=</stat>)' | sed -r 's/[,]/./g')
     
     # Check is the string contains value and valid
     if [ "$value" != "" ]
     then
-	echo "\"{YOUR_HOSTAME_ON_ZABBIX}\" $key $value" >> /tmp/zabbix_send.lst
+	echo "\"{YOUR_HOSTNAME_ON_ZABBIX}\" $key $value" >> /tmp/zabbix_send.lst
     fi
 done </tmp/zimbraStats.xml
 
