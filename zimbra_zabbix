@@ -1,0 +1,1 @@
+zabbix ALL=NOPASSWD: /opt/zimbra/common/bin/pflogsumm.pl, /etc/zabbix/scripts/zimbra/zimbraTrafficStats.sh
